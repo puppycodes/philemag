@@ -51,6 +51,7 @@ button:focus { outline: none; }
 .button-group {
 margin-bottom: 20px;
 margin-right: 20px;
+margin-left: 5px;
 display: inline-block;
 }
 
@@ -67,7 +68,7 @@ display: inline-block;
 /* ---- isotope ---- */
 
 .grid {
-
+max-width: 650px;
 }
 
 /* clear fix */
@@ -82,17 +83,21 @@ display: inline-block;
 .element-item {
   position: relative;
   float: left;
-  width: 500px;
-  height: 250px;
+  width: 300px;
+  height: 150px;
   margin: 5px;
-  padding: 10px;
-  background: #888;
+  padding: 0px;
+
   color: #262524;
 }
 
 .element-item.events {
-  background: green;
 
+
+}
+
+.plyr__video-wrapper {
+    background: transparent;
 }
 
 .element-item > * {
