@@ -7970,3 +7970,18 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
 .topframe {
   z-index: 0;
 }
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  background-color: white;
+}
+
+.grid-number {
+  background-color: transparent;
+  display: grid;
+  color: white;
+  margin: 10px;
+}

@@ -71,9 +71,10 @@
 
   <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'custom.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
   <!--[if lte IE 9]><script src="{{ 'custom.js' | asset_url }}"></script><![endif]-->
-  
+
     {{ "fontname.css"  | asset_url | stylesheet_tag }}
-  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/2.0.18/plyr.css" />
 </head>
 
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | split: '.' | first | handle }} data-animations">
@@ -94,6 +95,12 @@
   </div>
 
   {% include 'cart-drawer' %}
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/2.0.18/plyr.js"></script>
+  <script>plyr.setup({
+      controls: [
+        
+      ]
+  });
+</script>
 </body>
 </html>
