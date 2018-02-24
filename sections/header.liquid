@@ -19,7 +19,7 @@
     }
   </style>
 {% endif %}
-<div class="site-header{% if section.settings.enable_transparent and template.name == 'index' %} site-header--transparent{% endif %}{% if template.name == 'index' %} site-header--homepage{% endif %}" data-section-id="{{ section.id }}" data-section-type="header-section" data-drawer-push>
+<div id="white-menu" class="site-header {% if section.settings.enable_transparent and template.name == 'index' %} site-header--transparent{% endif %}{% if template.name == 'index' %} site-header--homepage{% endif %}" data-section-id="{{ section.id }}" data-section-type="header-section" data-drawer-push>
   <header class="site-header__wrapper">
     <div class="site-header-sections page-width">
       <div class="site-header__section site-header__section--button">
@@ -151,7 +151,7 @@
         </div>
       {% endif %}
 
-     
+
     </div>
   </nav>
 </div>

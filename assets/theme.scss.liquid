@@ -4722,19 +4722,19 @@ $image-bar-placeholder-border-color: rgba($color-body-text, 0.25);
 
   @include media-query($medium-up) {
     &:hover {
-      @include transform(translateY(-5px));
+      // @include transform(translateY(-5px));
 
       &:after {
-        @include transform(translateY(5px));
+        // @include transform(translateY(5px));
         width: 100%;
       }
     }
 
     &:hover:active {
-      @include transform(translateY(0));
+      // @include transform(translateY(0));
 
       &:after {
-        @include transform(translateY(0));
+        // @include transform(translateY(0));
       }
     }
   }
@@ -4775,18 +4775,18 @@ $image-bar-placeholder-border-color: rgba($color-body-text, 0.25);
     font-weight: $font-weight-bold;
 
     &:hover {
-      @include transform(translateY(-5px));
+      // @include transform(translateY(-5px));
 
       &:after {
-        @include transform(translateY(5px));
+        // @include transform(translateY(5px));
       }
     }
 
     &:hover:active {
-      @include transform(translateY(0));
+      // @include transform(translateY(0));
 
       &:after {
-        @include transform(translateY(0));
+        // @include transform(translateY(0));
       }
     }
   }
@@ -6006,6 +6006,8 @@ $site-header-wrapper-color: rgba($color-header, 0);
 }
 
 .site-header__wrapper {
+  position: fixed !important;
+  transform: none !important;
   position: relative;
   padding-top:15px;
   width: 100%;
@@ -6271,7 +6273,7 @@ $site-header-wrapper-color: rgba($color-header, 0);
     top: 32px;
 
     .site-header__navigation:hover & {
-      @include transform(translateY(2px));
+      // @include transform(translateY(2px));
 
       .navigation-open & {
         width: 35px;
@@ -8003,4 +8005,37 @@ font-size: 14px;
 
 .caption li {
   margin: 0;
+}
+
+.placeholder-background {
+  opacity: 0;
+}
+
+.topframe {
+  display: none;
+}
+
+.landing-feature {
+  position: relative;
+}
+
+.landing-logo {
+position: fixed;
+}
+
+#white-menu {
+  opacity: 0;
+}
+
+.navigation-open .site-header {
+  transition: none !important;
+  opacity: 1 !important;
+}
+
+.navigation-open .landing-feature {
+display: none;
+}
+
+.navigation-open .site-header__logo-image {
+  opacity: 0;
 }
