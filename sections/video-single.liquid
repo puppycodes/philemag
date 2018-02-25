@@ -1,0 +1,57 @@
+<div id="video-single">
+<div class="grid-wrapper">
+  {% for block in section.blocks %}
+    <div class="grid-number" {{ block.shopify_attributes }}>
+      {% case block.type %}
+      {% when 'text' %}
+      <div data-type="vimeo" data-video-id="{{ block.settings.video-single }}"></div>
+      <div class="caption">
+
+        <br>
+          {{ block.settings.single-meta1 }}<br>
+          {{ block.settings.single-meta2 }}<br>
+          {{ block.settings.single-meta3 }}<br>
+
+      </div>
+      {% endcase %}
+    </div>
+  {% endfor %}
+
+</div>
+
+
+
+</div>
+
+{% schema %}
+{
+   "blocks": [
+     {
+       "type": "text",
+       "name": "Vimeo link",
+       "settings": [
+         {
+           "id": "video-single",
+           "type": "text",
+           "label": "ID"
+         },
+         {
+          "id": "single-meta1",
+          "type": "text",
+          "label": "Caption Line"
+        },
+        {
+         "id": "single-meta2",
+         "type": "text",
+         "label": "Caption Line"
+       },
+       {
+        "id": "single-meta3",
+        "type": "text",
+        "label": "Caption Line"
+      }
+       ]
+     }
+   ]
+ }
+{% endschema %}
