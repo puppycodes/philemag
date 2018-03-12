@@ -2,11 +2,13 @@
 assets/custom.js:
   development: 2018-02-24T18:18:28-05:00   e94b6ec2e88aa9ce598fa111f4d94015
 assets/theme.scss.liquid:
-  development: 2018-02-24T19:04:18-05:00   076dfe1879b1b5ddf5bcd43fbf4dc456
+  development: 2018-03-12T17:10:20-04:00   9074f30fd0ebfa1324e72f5f9b24e6a4
 config/settings_data.json:
   development: 2018-02-22T18:23:00-05:00   e7de5651aeefd7d2226ec944d5b6fc32
 layout/theme.liquid:
-  development: 2018-02-24T18:49:30-05:00   514b0815aaa551a908f93cd0d19f9381
+  development: 2018-03-11T23:39:17-04:00   da5063a316386b616ef12d98c5d62e9e
+sections/collection-template.liquid:
+  development: 2018-03-12T01:00:24-04:00   3294f2ace5571c625fe5fa2facd2e47c
 sections/header.liquid:
   development: 2018-02-24T18:11:14-05:00   9d7abcc524f6bb5e8c8485489466ec57
 sections/landing-feature.liquid:

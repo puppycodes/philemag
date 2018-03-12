@@ -114,7 +114,7 @@
 
     <div class="card-list grid" data-desktop-columns="{{ desktopColumns }}" data-mobile-columns="{{ mobileColumns }}">
       <div class="card-list__column{% if totalProducts == 1 %} card-list__column--center{% endif %} grid grid__item {{ gridClasses }}">
-        {% for product in collection.products %}
+        {% for product in collection.products reversed %}
           {% include 'product-card', product: product %}
         {% endfor %}
       </div>
